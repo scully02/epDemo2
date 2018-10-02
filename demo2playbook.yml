@@ -1,0 +1,8 @@
+- name: Create a File
+  hosts: localhost
+
+  tasks:
+    - name: Create a dummy file
+      file:
+        path: /tmp/testing123
+        state: touch
